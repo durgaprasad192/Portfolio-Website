@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <!-- Hacker-style font for Matrix look -->
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Matrix Background -->
+  <canvas id="matrixBackground"></canvas>
+
+  <!-- Welcome Overlay -->
+  <div id="welcomeOverlay">
+    <div class="welcome-content">
+      <h1>Welcome to My Portfolio</h1>
+      <button id="enterBtn">Let's Go 🚀</button>
+    </div>
+  </div>
+
+  <!-- Main Portfolio Page (hidden at first) -->
+  <div id="mainContent" style="display:none;">
+    <!-- Header -->
+    <header>
+      <h1>Hello, I'm Durga Prasad</h1>
+      <p>Welcome to my portfolio website!</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+      <button class="tabBtn active" data-target="about">About</button>
+      <button class="tabBtn" data-target="projects">Projects</button>
+      <button class="tabBtn" data-target="contact">Contact</button>
+    </nav>
+
+    <!-- Sections -->
+    <section id="about" class="tabContent">
+      <h2>About Me</h2>
+      <!-- SVG Avatar -->
+      <div class="profile-svg">
+        <!-- ... SVG code from above ... -->
+        <svg width="140" height="140" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="70" cy="70" r="65" fill="#39ff14" stroke="#0f0" stroke-width="5"/>
+          <ellipse cx="70" cy="70" rx="40" ry="45" fill="#111"/>
+          <!-- Face -->
+          <ellipse cx="70" cy="80" rx="32" ry="30" fill="#ffe0b2"/>
+          <!-- Hair -->
+          <ellipse cx="70" cy="63" rx="34" ry="14" fill="#222"/>
+          <ellipse cx="88" cy="74" rx="10" ry="10" fill="#222"/>
+          <ellipse cx="52" cy="74" rx="10" ry="10" fill="#222"/>
+          <!-- Eyes -->
+          <ellipse cx="60" cy="86" rx="4" ry="4" fill="#111"/>
+          <ellipse cx="80" cy="86" rx="4" ry="4" fill="#111"/>
+          <!-- Smile -->
+          <path d="M60 97 Q70 105 80 97" stroke="#ab6f2a" stroke-width="3" fill="none" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <p>
+        👋 Hi, I’m Durga Prasad, a student passionate about coding.<br/>
+        💻 I enjoy solving problems and building creative projects with code.<br/>
+        🚀 My interests include web development, app development, and AI.<br/>
+        📚 I’m always learning new tools, languages, and frameworks.<br/>
+        🎯 My goal is to grow as a developer and create impactful solutions.
+      </p>
+    </section>
+
+    <section id="projects" class="tabContent" style="display:none;">
+      <h2>Projects</h2>
+      <ul>
+        <li><b>Project 1:</b> Dodge Rush</li>
+        <li><b>Project 2:</b> Flappy Bird</li>
+        <li><b>Project 3:</b> Portfolio Website</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="tabContent" style="display:none;">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:durgaprasadravi6@gmail.com">durgaprasadravi6@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">My LinkedIn</a></p>
+      <p>GitHub: <a href="https://github.com/durgaprasad192?tab=repositories" target="_blank">My GitHub</a></p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
